@@ -1,0 +1,38 @@
+Wireframe: Register Page
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Login] [Register]|
++--------------------------------------------------+
+| NAVIGATION                                       |
+| [Home] [About] [Events] [Notices] [FAQ] [Contact]|
++--------------------------------------------------+
+| MAIN CONTENT                                     |
+|                                                  |
+|         +--------------------------+             |
+|         | REGISTER                 |             |
+|         +--------------------------+             |
+|         | Full Name [____________] |             |
+|         | Email     [____________] |             |
+|         | Mobile    [____________] |             |
+|         | Password  [____________] |             |
+|         | Confirm   [____________] |             |
+|         | Course    [Dropdown ▼]  |             |
+|         | Year      [Dropdown ▼]  |             |
+|         | Gender    ( ) Male       |             |
+|         |           ( ) Female     |             |
+|         |           ( ) Other      |             |
+|         | [ ] Terms & Conditions   |             |
+|         | [Submit Button]          |             |
+|         +--------------------------+             |
+|                                                  |
++--------------------------------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only
+FORM FIELDS: Name (text), Email (email), Mobile (tel), Password (password), Confirm Password (password), Course (select), Year (select), Gender (radio), Terms (checkbox), Submit (button)
+STABLE IDs: fullName, email, mobile, password, confirmPassword, course, year, gender, terms

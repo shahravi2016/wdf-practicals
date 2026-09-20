@@ -1,0 +1,32 @@
+Wireframe: Home Page
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Login] [Register]|
++--------------------------------------------------+
+| NAVIGATION                                       |
+| [Home] [About] [Events] [Notices] [FAQ] [Contact]|
++--------------------------------------------------+
+| HERO / INTRODUCTION                              |
+|  Welcome to StudentHub                           |
+|  Your centralized academic portal                |
++--------------------------------------------------+
+| QUICK ACCESS                  | ACADEMIC INFO    |
+| [Courses] [Attendance]        | Current Courses  |
+| [Events] [Notices]            | Upcoming Exams   |
+| [Feedback] [Settings]         | Faculty Info     |
++-------------------------------+------------------+
+| UPCOMING EVENTS              | LATEST NOTICES   |
+| [Event Card] [Event Card]     | [Notice Item]    |
+| [Event Card] [Event Card]     | [Notice Item]    |
++-------------------------------+------------------+
+| STUDENT SERVICES                                  |
+| [Library] [Hostel] [Transport] [Placements]      |
++--------------------------------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only

@@ -1,0 +1,39 @@
+Wireframe: Student Dashboard
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Profile] [Logout]|
++--------------------------------------------------+
+| SIDEBAR              | MAIN CONTENT               |
+| +------------------+ | +------------------------+ |
+| | NAVIGATION       | | | WELCOME                | |
+| | [Dashboard]      | | | Hello, [Student Name]  | |
+| | [Profile]        | | +------------------------+ |
+| | [Courses]        | | | COURSES                | |
+| | [Attendance]     | | | [Course Card] [Course] | |
+| | [Notices]        | | | [Course Card] [Course] | |
+| | [Feedback]       | | +------------------------+ |
+| | [Settings]       | | | ATTENDANCE             | |
+| | [Logout]         | | | Overall: 85%           | |
+| +------------------+ | | [Course-wise Bar Chart]| |
+|                      | | +------------------------+ |
+|                      | | | NOTICES                | |
+|                      | | | [Notice Item]          | |
+|                      | | | [Notice Item]          | |
+|                      | | +------------------------+ |
+|                      | | | UPCOMING EVENTS        | |
+|                      | | | [Event Card] [Event]   | |
+|                      | | +------------------------+ |
+|                      | | | QUICK ACTIONS          | |
+|                      | | | [Profile] [Courses]    | |
+|                      | | | [Feedback] [Settings]  | |
+|                      | | +------------------------+ |
++----------------------+ +--------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only
+LAYOUT: Sidebar navigation + main content sections

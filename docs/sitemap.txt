@@ -1,0 +1,24 @@
+StudentHub
+│
+├── Public
+│   ├── Home
+│   ├── About
+│   ├── Events
+│   ├── Notices
+│   ├── FAQ
+│   └── Contact
+│
+├── Authentication
+│   ├── Login
+│   └── Register
+│
+├── Student
+│   ├── Dashboard
+│   ├── Profile
+│   ├── Courses
+│   ├── Attendance
+│   ├── Feedback
+│   └── Settings
+│
+└── Admin
+    └── Admin Dashboard

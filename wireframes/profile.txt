@@ -1,0 +1,40 @@
+Wireframe: Profile Page
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Profile] [Logout]|
++--------------------------------------------------+
+| SIDEBAR              | MAIN CONTENT               |
+| +------------------+ | +------------------------+ |
+| | NAVIGATION       | | | PROFILE                | |
+| | [Dashboard]      | | +------------------------+ |
+| | [Profile]        | | | PERSONAL INFORMATION   | |
+| | [Courses]        | | | Name: [____________]   | |
+| | [Attendance]     | | | Email: [____________]  | |
+| | [Notices]        | | | Mobile: [____________] | |
+| | [Feedback]       | | | Gender: [____________] | |
+| | [Settings]       | | | DOB: [____________]    | |
+| | [Logout]         | | +------------------------+ |
+| +------------------+ | | ACADEMIC INFORMATION   | |
+|                      | | Student ID: [________] | |
+|                      | | Course: [____________] | |
+|                      | | Year: [____________]   | |
+|                      | | Roll No: [___________] | |
+|                      | | +------------------------+ |
+|                      | | CONTACT INFORMATION    | |
+|                      | | Address: [___________] | |
+|                      | | City: [____________]   | |
+|                      | | State: [____________]  | |
+|                      | | Pincode: [___________] | |
+|                      | | +------------------------+ |
+|                      | | [Edit Profile Button]  | |
+|                      | +------------------------+ |
++----------------------+ +--------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only
+LAYOUT: Sidebar navigation + main content with grouped sections

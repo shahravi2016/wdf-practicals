@@ -1,0 +1,40 @@
+Wireframe: Courses Page
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Profile] [Logout]|
++--------------------------------------------------+
+| SIDEBAR              | MAIN CONTENT               |
+| +------------------+ | +------------------------+ |
+| | NAVIGATION       | | | COURSES                | |
+| | [Dashboard]      | | +------------------------+ |
+| | [Profile]        | | | CURRENT COURSES        | |
+| | [Courses]        | | | [Course Card]          | |
+| | [Attendance]     | | | Code: CS101            | |
+| | [Notices]        | | | Name: Programming      | |
+| | [Feedback]       | | | Faculty: Dr. Smith     | |
+| | [Settings]       | | | Credits: 4             | |
+| | [Logout]         | | | [Course Card]          | |
+| +------------------+ | | Code: MA101            | |
+|                      | | Name: Mathematics      | |
+|                      | | Faculty: Dr. Jones     | |
+|                      | | Credits: 3             | |
+|                      | | +------------------------+ |
+|                      | | | COURSE INFORMATION     | |
+|                      | | | Syllabus: [Link]       | |
+|                      | | | Schedule: [Link]       | |
+|                      | | | Resources: [Link]      | |
+|                      | | +------------------------+ |
+|                      | | | FACULTY INFORMATION    | |
+|                      | | | [Faculty Card]         | |
+|                      | | | Name, Dept, Email      | |
+|                      | | +------------------------+ |
++----------------------+ +--------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only
+LAYOUT: Sidebar navigation + main content with course cards

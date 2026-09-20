@@ -1,0 +1,32 @@
+Wireframe: Login Page
+Format: draw.io compatible layout description
+
+LAYOUT:
++--------------------------------------------------+
+| HEADER                                           |
+|  [Logo] StudentHub              [Login] [Register]|
++--------------------------------------------------+
+| NAVIGATION                                       |
+| [Home] [About] [Events] [Notices] [FAQ] [Contact]|
++--------------------------------------------------+
+| MAIN CONTENT                                     |
+|                                                  |
+|         +--------------------------+             |
+|         | LOGIN                    |             |
+|         +--------------------------+             |
+|         | Email    [____________] |             |
+|         | Password [____________] |             |
+|         | [ ] Remember me         |             |
+|         | [Login Button]          |             |
+|         |                         |             |
+|         | Don't have account?     |             |
+|         | [Register Link]         |             |
+|         +--------------------------+             |
+|                                                  |
++--------------------------------------------------+
+| FOOTER                                           |
+|  © 2026 StudentHub | Contact | Privacy           |
++--------------------------------------------------+
+
+STYLE: Grayscale, simple boxes, section labels only
+FORM FIELDS: Email (type=email), Password (type=password), Remember (checkbox), Login (button), Register (link)

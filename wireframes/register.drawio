@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2026-09-21T01:30:00.000Z" agent="StudentHub" version="24.2.5" etag="studenthub-register-wireframe">
+  <diagram name="Register Wireframe" id="register-wireframe">
+    <mxGraphModel dx="800" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="HEADER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="700" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="[Logo] StudentHub                    [Login] [Register]" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="10" y="15" width="680" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="NAVIGATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="700" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="[Home] [About] [Events] [Notices] [FAQ] [Contact]" style="whiteSpace=wrap;html=1;" vertex="1" parent="4">
+          <mxGeometry x="10" y="10" width="680" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="REGISTER FORM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="190" width="400" height="420" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="REGISTER" style="whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="6">
+          <mxGeometry x="10" y="10" width="380" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Full Name:&#10;[____________________]&#10;&#10;Email:&#10;[____________________]&#10;&#10;Mobile:&#10;[____________________]&#10;&#10;Password:&#10;[____________________]&#10;&#10;Confirm Password:&#10;[____________________]&#10;&#10;Course: [Dropdown ▼]&#10;&#10;Year: [Dropdown ▼]&#10;&#10;Gender: ( ) Male  ( ) Female  ( ) Other&#10;&#10;[ ] Terms & Conditions&#10;&#10;[Submit Button]" style="whiteSpace=wrap;html=1;" vertex="1" parent="6">
+          <mxGeometry x="10" y="50" width="380" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="FOOTER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="640" width="700" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="© 2026 StudentHub | Contact | Privacy" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="9">
+          <mxGeometry x="10" y="15" width="680" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

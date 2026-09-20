@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2026-09-21T01:35:00.000Z" agent="StudentHub" version="24.2.5" etag="studenthub-dashboard-wireframe">
+  <diagram name="Dashboard Wireframe" id="dashboard-wireframe">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="HEADER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="1100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="[Logo] StudentHub                    [Profile] [Logout]" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="10" y="15" width="1080" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="SIDEBAR NAVIGATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="250" height="550" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="[Dashboard]&#10;[Profile]&#10;[Courses]&#10;[Attendance]&#10;[Notices]&#10;[Feedback]&#10;[Settings]&#10;[Logout]" style="whiteSpace=wrap;html=1;" vertex="1" parent="4">
+          <mxGeometry x="10" y="15" width="230" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="WELCOME" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="110" width="830" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Hello, [Student Name]" style="whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;" vertex="1" parent="6">
+          <mxGeometry x="10" y="15" width="810" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="COURSES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="210" width="390" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="[Course Card] [Course Card]&#10;[Course Card] [Course Card]" style="whiteSpace=wrap;html=1;" vertex="1" parent="8">
+          <mxGeometry x="10" y="15" width="370" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="ATTENDANCE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="210" width="420" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Overall: 85%&#10;[Course-wise Bar Chart]" style="whiteSpace=wrap;html=1;" vertex="1" parent="10">
+          <mxGeometry x="10" y="15" width="400" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="NOTICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="390" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="[Notice Item]&#10;[Notice Item]&#10;[Notice Item]" style="whiteSpace=wrap;html=1;" vertex="1" parent="12">
+          <mxGeometry x="10" y="15" width="370" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="UPCOMING EVENTS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="380" width="420" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="[Event Card] [Event Card]&#10;[Event Card] [Event Card]" style="whiteSpace=wrap;html=1;" vertex="1" parent="14">
+          <mxGeometry x="10" y="15" width="400" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="QUICK ACTIONS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="550" width="830" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="[Profile] [Courses] [Feedback] [Settings]" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="16">
+          <mxGeometry x="10" y="20" width="810" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="FOOTER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="680" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="© 2026 StudentHub | Contact | Privacy" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="18">
+          <mxGeometry x="10" y="15" width="1080" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

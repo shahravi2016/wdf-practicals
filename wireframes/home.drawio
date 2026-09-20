@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2026-09-21T01:20:00.000Z" agent="StudentHub" version="24.2.5" etag="studenthub-home-wireframe">
+  <diagram name="Home Wireframe" id="home-wireframe">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="HEADER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="1100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="[Logo] StudentHub                    [Login] [Register]" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="10" y="15" width="1080" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="NAVIGATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="1100" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="[Home] [About] [Events] [Notices] [FAQ] [Contact]" style="whiteSpace=wrap;html=1;" vertex="1" parent="4">
+          <mxGeometry x="10" y="10" width="1080" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="HERO / INTRODUCTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="180" width="1100" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Welcome to StudentHub&#10;Your centralized academic portal" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6">
+          <mxGeometry x="10" y="15" width="1080" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="QUICK ACCESS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="530" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="[Courses] [Attendance]&#10;[Events] [Notices]&#10;[Feedback] [Settings]" style="whiteSpace=wrap;html=1;" vertex="1" parent="8">
+          <mxGeometry x="10" y="15" width="510" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="ACADEMIC INFO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="550" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Current Courses&#10;Upcoming Exams&#10;Faculty Info" style="whiteSpace=wrap;html=1;" vertex="1" parent="10">
+          <mxGeometry x="10" y="15" width="530" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="UPCOMING EVENTS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="530" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="[Event Card] [Event Card]&#10;[Event Card] [Event Card]" style="whiteSpace=wrap;html=1;" vertex="1" parent="12">
+          <mxGeometry x="10" y="15" width="510" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="LATEST NOTICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="420" width="550" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="[Notice Item]&#10;[Notice Item]&#10;[Notice Item]" style="whiteSpace=wrap;html=1;" vertex="1" parent="14">
+          <mxGeometry x="10" y="15" width="530" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="STUDENT SERVICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="590" width="1100" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="[Library] [Hostel] [Transport] [Placements]" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="16">
+          <mxGeometry x="10" y="20" width="1080" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="FOOTER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="690" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="© 2026 StudentHub | Contact | Privacy" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="18">
+          <mxGeometry x="10" y="15" width="1080" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

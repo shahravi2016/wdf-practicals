@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudentHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-header">
+                <h1>Feedback</h1>
+            </section>
+
+            <section class="feedback-info">
+                <h2>Feedback Information</h2>
+                <p>Your feedback helps us improve campus facilities, academic programs, and student services. All submissions are reviewed by the administration.</p>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Academic Feedback</h3>
+                        <p>Course content, teaching quality, curriculum suggestions</p>
+                    </article>
+                    <article class="card">
+                        <h3>Facilities Feedback</h3>
+                        <p>Library, labs, hostel, sports, transport services</p>
+                    </article>
+                    <article class="card">
+                        <h3>Campus Life</h3>
+                        <p>Events, clubs, food services, safety, accessibility</p>
+                    </article>
+                    <article class="card">
+                        <h3>Technical Issues</h3>
+                        <p>Portal bugs, system errors, feature requests</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="feedback-form-section">
+                <h2>Submit Feedback</h2>
+                <form class="feedback-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="feedback-category">Category</label>
+                        <select id="feedback-category" name="category" required>
+                            <option value="">Select category</option>
+                            <option value="academic">Academic</option>
+                            <option value="facilities">Facilities</option>
+                            <option value="campus-life">Campus Life</option>
+                            <option value="technical">Technical Issues</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-subject">Subject</label>
+                        <input type="text" id="feedback-subject" name="subject" required placeholder="Brief summary of your feedback">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-rating">Rating</label>
+                        <select id="feedback-rating" name="rating" required>
+                            <option value="">Select rating</option>
+                            <option value="5">Excellent (5)</option>
+                            <option value="4">Good (4)</option>
+                            <option value="3">Average (3)</option>
+                            <option value="2">Below Average (2)</option>
+                            <option value="1">Poor (1)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">Detailed Feedback</label>
+                        <textarea id="feedback-message" name="message" rows="6" required placeholder="Describe your feedback in detail..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="feedback-anonymous" name="anonymous">
+                        <label for="feedback-anonymous">Submit anonymously</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

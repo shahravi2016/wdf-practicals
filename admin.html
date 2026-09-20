@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudentHub Admin</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html" aria-current="page">Admin Dashboard</a></li>
+                    <li><a href="#">Student Management</a></li>
+                    <li><a href="#">Event Management</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-header">
+                <h1>Admin Dashboard</h1>
+            </section>
+
+            <section class="admin-stats">
+                <h2>Overview</h2>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <h3>Total Students</h3>
+                        <p class="stat-number">1,247</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Active Events</h3>
+                        <p class="stat-number">12</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Pending Registrations</h3>
+                        <p class="stat-number">23</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Feedback Submissions</h3>
+                        <p class="stat-number">156</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Student Management</h2>
+                <p>Manage student records, view profiles, and handle registrations.</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">View All Students</a>
+                    <a href="#" class="btn">Pending Approvals</a>
+                    <a href="#" class="btn">Add Student</a>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Event Management</h2>
+                <p>Create, edit, and manage campus events and announcements.</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">View All Events</a>
+                    <a href="#" class="btn">Create Event</a>
+                    <a href="#" class="btn">Event Reports</a>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Statistics</h2>
+                <p>View system analytics and generate reports.</p>
+                <div class="action-buttons">
+                    <a href="#" class="btn">Enrollment Reports</a>
+                    <a href="#" class="btn">Attendance Analytics</a>
+                    <a href="#" class="btn">Feedback Analysis</a>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Recent Registrations</h2>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Priya Sharma</td>
+                            <td>B.Tech CS</td>
+                            <td>1st Year</td>
+                            <td><span class="status-pending">Pending</span></td>
+                            <td>Sep 20, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Rahul Verma</td>
+                            <td>B.Tech IT</td>
+                            <td>1st Year</td>
+                            <td><span class="status-approved">Approved</span></td>
+                            <td>Sep 19, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Anjali Patel</td>
+                            <td>MCA</td>
+                            <td>1st Year</td>
+                            <td><span class="status-pending">Pending</span></td>
+                            <td>Sep 18, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Vikram Singh</td>
+                            <td>B.Tech ECE</td>
+                            <td>2nd Year</td>
+                            <td><span class="status-approved">Approved</span></td>
+                            <td>Sep 17, 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

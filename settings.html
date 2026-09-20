@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudentHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="settings.html" aria-current="page">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-header">
+                <h1>Settings</h1>
+            </section>
+
+            <section class="settings-section">
+                <h2>Account Settings</h2>
+                <form class="settings-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="settings-email">Email Address</label>
+                        <input type="email" id="settings-email" name="email" value="alex.johnson@student.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="settings-phone">Phone Number</label>
+                        <input type="tel" id="settings-phone" name="phone" value="+1 (234) 567-890">
+                    </div>
+                    <div class="form-group">
+                        <label for="settings-current-password">Current Password</label>
+                        <input type="password" id="settings-current-password" name="currentPassword" autocomplete="current-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="settings-new-password">New Password</label>
+                        <input type="password" id="settings-new-password" name="newPassword" autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="settings-confirm-password">Confirm New Password</label>
+                        <input type="password" id="settings-confirm-password" name="confirmPassword" autocomplete="new-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </section>
+
+            <section class="settings-section">
+                <h2>Notification Settings</h2>
+                <form class="settings-form" action="#" method="post">
+                    <fieldset class="form-group">
+                        <legend>Email Notifications</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notif-grades" name="notifGrades" checked>
+                            <label for="notif-grades">Grade updates and results</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notif-attendance" name="notifAttendance" checked>
+                            <label for="notif-attendance">Low attendance alerts</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notif-events" name="notifEvents" checked>
+                            <label for="notif-events">Upcoming events and deadlines</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notif-notices" name="notifNotices" checked>
+                            <label for="notif-notices">Important notices and announcements</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notif-feedback" name="notifFeedback">
+                            <label for="notif-feedback">Feedback responses</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend>SMS Notifications</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sms-urgent" name="smsUrgent" checked>
+                            <label for="sms-urgent">Urgent alerts only</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sms-all" name="smsAll">
+                            <label for="sms-all">All notifications</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Save Notification Preferences</button>
+                </form>
+            </section>
+
+            <section class="settings-section">
+                <h2>Preferences</h2>
+                <form class="settings-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="theme">Theme</label>
+                        <select id="theme" name="theme">
+                            <option value="light" selected>Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="system">System Default</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select id="language" name="language">
+                            <option value="en" selected>English</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="timezone">Timezone</label>
+                        <select id="timezone" name="timezone">
+                            <option value="utc+5:30" selected>UTC+5:30 (India)</option>
+                            <option value="utc">UTC</option>
+                            <option value="utc-5">UTC-5 (EST)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Preferences</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

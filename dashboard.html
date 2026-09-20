@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudentHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="welcome-section">
+                <h1>Welcome, Alex Johnson</h1>
+                <p>Here's your academic overview for this semester.</p>
+            </section>
+
+            <section class="dashboard-grid">
+                <article class="card">
+                    <h2>Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <strong>CS101</strong> - Programming Fundamentals
+                            <span>Dr. Smith</span>
+                        </div>
+                        <div class="course-item">
+                            <strong>MA101</strong> - Calculus I
+                            <span>Dr. Jones</span>
+                        </div>
+                        <div class="course-item">
+                            <strong>PH101</strong> - Physics
+                            <span>Dr. Wilson</span>
+                        </div>
+                    </div>
+                    <a href="courses.html" class="btn">View All Courses</a>
+                </article>
+
+                <article class="card">
+                    <h2>Attendance</h2>
+                    <div class="attendance-summary">
+                        <div class="attendance-item">
+                            <span>Overall:</span>
+                            <strong>87%</strong>
+                        </div>
+                        <div class="attendance-item">
+                            <span>CS101:</span>
+                            <strong>92%</strong>
+                        </div>
+                        <div class="attendance-item">
+                            <span>MA101:</span>
+                            <strong>85%</strong>
+                        </div>
+                        <div class="attendance-item">
+                            <span>PH101:</span>
+                            <strong>84%</strong>
+                        </div>
+                    </div>
+                    <a href="attendance.html" class="btn">View Details</a>
+                </article>
+
+                <article class="card">
+                    <h2>Notices</h2>
+                    <div class="notice-list">
+                        <div class="notice-item">
+                            <h3>Semester Registration Opens</h3>
+                            <p>Registration opens Oct 1, 2026</p>
+                        </div>
+                        <div class="notice-item">
+                            <h3>Exam Schedule Released</h3>
+                            <p>Check timetable section</p>
+                        </div>
+                    </div>
+                    <a href="notices.html" class="btn">View All Notices</a>
+                </article>
+
+                <article class="card">
+                    <h2>Upcoming Events</h2>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <h3>Tech Symposium 2026</h3>
+                            <p>Oct 15-17 | Main Auditorium</p>
+                        </div>
+                        <div class="event-item">
+                            <h3>Career Fair</h3>
+                            <p>Nov 5 | Convention Center</p>
+                        </div>
+                    </div>
+                    <a href="events.html" class="btn">View All Events</a>
+                </article>
+            </section>
+
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <a href="profile.html" class="btn">Update Profile</a>
+                    <a href="courses.html" class="btn">My Courses</a>
+                    <a href="feedback.html" class="btn">Give Feedback</a>
+                    <a href="settings.html" class="btn">Settings</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

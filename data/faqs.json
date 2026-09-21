@@ -1,0 +1,124 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "What is StudentHub?",
+            "answer": "StudentHub is a centralized student portal that provides access to academic information, campus events, notices, and student services in one place.",
+            "category": "General"
+        },
+        {
+            "id": 2,
+            "question": "Who can access StudentHub?",
+            "answer": "All registered students can access the portal. Public pages like Home, About, Events, Notices, FAQ, and Contact are accessible to everyone.",
+            "category": "General"
+        },
+        {
+            "id": 3,
+            "question": "How do I register for an account?",
+            "answer": "Click on the Register link in the navigation menu and fill out the registration form with your details. You will need your student ID and valid email address.",
+            "category": "General"
+        },
+        {
+            "id": 4,
+            "question": "I forgot my password. What should I do?",
+            "answer": "Use the Forgot Password link on the login page to reset your password. You will receive reset instructions via email.",
+            "category": "Technical"
+        },
+        {
+            "id": 5,
+            "question": "How do I view my courses?",
+            "answer": "After logging in, go to the Dashboard and click on Courses in the sidebar navigation to view your current courses.",
+            "category": "Academic"
+        },
+        {
+            "id": 6,
+            "question": "Where can I check my attendance?",
+            "answer": "Attendance records are available in the Attendance section of your student dashboard after logging in.",
+            "category": "Academic"
+        },
+        {
+            "id": 7,
+            "question": "How do I access exam timetables?",
+            "answer": "Exam timetables are posted in the Notices section under Academic Notices and are also available in your dashboard during exam periods.",
+            "category": "Academic"
+        },
+        {
+            "id": 8,
+            "question": "Is StudentHub mobile-friendly?",
+            "answer": "Yes, StudentHub is designed with responsive layouts that work on mobile, tablet, and desktop devices.",
+            "category": "Technical"
+        },
+        {
+            "id": 9,
+            "question": "How do I report a technical issue?",
+            "answer": "Use the Contact form or the Feedback section in your dashboard to report technical issues to the support team.",
+            "category": "Technical"
+        },
+        {
+            "id": 10,
+            "question": "Can I update my profile information?",
+            "answer": "Yes, go to Profile in your dashboard sidebar and click the Edit Profile button to update your personal and contact information.",
+            "category": "Account"
+        },
+        {
+            "id": 11,
+            "question": "How do I submit feedback?",
+            "answer": "Navigate to the Feedback section in your dashboard, fill out the feedback form with category, subject, rating, and detailed message, then submit.",
+            "category": "Feedback"
+        },
+        {
+            "id": 12,
+            "question": "What are the notification settings?",
+            "answer": "In Settings > Notification Settings, you can choose which email and SMS notifications you want to receive for grades, attendance, events, and notices.",
+            "category": "Account"
+        },
+        {
+            "id": 13,
+            "question": "How do I register for events?",
+            "answer": "Browse the Events page, click View Details on any event, and follow the registration link. Some events may require admin approval.",
+            "category": "Events"
+        },
+        {
+            "id": 14,
+            "question": "Where can I find my grades?",
+            "answer": "Grades are available in the Courses section of your dashboard. Click on a course to view detailed assessment results.",
+            "category": "Academic"
+        },
+        {
+            "id": 15,
+            "question": "How do I contact the admin office?",
+            "answer": "Use the Contact page for general inquiries. For urgent matters, call the office at +1 (234) 567-890 or visit Student Services Building, Room 204.",
+            "category": "General"
+        },
+        {
+            "id": 16,
+            "question": "What is the minimum attendance requirement?",
+            "answer": "Students must maintain at least 75% attendance in each course to be eligible for examinations. Automated alerts are sent when attendance falls below 80%.",
+            "category": "Academic"
+        },
+        {
+            "id": 17,
+            "question": "How do I apply for leave?",
+            "answer": "Medical and approved leaves are counted separately. Submit leave applications through the student services portal with supporting documents.",
+            "category": "Academic"
+        },
+        {
+            "id": 18,
+            "question": "Can I change my course or specialization?",
+            "answer": "Course changes are allowed within the first two weeks of the semester. Contact the academic office with your request and get approval from both department heads.",
+            "category": "Academic"
+        },
+        {
+            "id": 19,
+            "question": "How do I access library resources?",
+            "answer": "Library catalog, e-books, and databases are accessible through the Library link in Student Services on the home page. Use your student credentials to log in.",
+            "category": "Services"
+        },
+        {
+            "id": 20,
+            "question": "What payment methods are accepted for fees?",
+            "answer": "Online payment portal accepts credit/debit cards, net banking, UPI, and wallet payments. Fee receipts are generated automatically after successful payment.",
+            "category": "General"
+        }
+    ]
+}

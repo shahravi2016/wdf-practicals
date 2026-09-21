@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - FAQ</title>
-    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/utils.css">
 </head>
 <body>
     <header>
@@ -28,63 +34,53 @@
             <h1>Frequently Asked Questions</h1>
         </section>
 
-        <section class="faq-section">
-            <h2>General Questions</h2>
-            <div class="faq-list">
-                <article class="faq-item">
-                    <h3>What is StudentHub?</h3>
-                    <p>StudentHub is a centralized student portal that provides access to academic information, campus events, notices, and student services in one place.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>Who can access StudentHub?</h3>
-                    <p>All registered students can access the portal. Public pages like Home, About, Events, Notices, FAQ, and Contact are accessible to everyone.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>How do I register for an account?</h3>
-                    <p>Click on the "Register" link in the navigation menu and fill out the registration form with your details. You will need your student ID and valid email address.</p>
-                </article>
+        <section class="faq-controls">
+            <div class="controls-row">
+                <div class="search-box">
+                    <label for="faq-search" class="visually-hidden">Search FAQs</label>
+                    <input type="search" id="faq-search" placeholder="Search FAQs..." aria-describedby="faq-search-hint">
+                    <span id="faq-search-hint" class="visually-hidden">Type to filter questions and answers</span>
+                </div>
+                <div class="filter-box">
+                    <label for="faq-filter" class="visually-hidden">Filter by category</label>
+                    <select id="faq-filter" aria-label="Filter FAQs by category">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
             </div>
         </section>
 
-        <section class="faq-section">
-            <h2>Academic Questions</h2>
-            <div class="faq-list">
-                <article class="faq-item">
-                    <h3>How do I view my courses?</h3>
-                    <p>After logging in, go to the Dashboard and click on "Courses" in the sidebar navigation to view your current courses.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>Where can I check my attendance?</h3>
-                    <p>Attendance records are available in the "Attendance" section of your student dashboard after logging in.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>How do I access exam timetables?</h3>
-                    <p>Exam timetables are posted in the Notices section under "Academic Notices" and are also available in your dashboard during exam periods.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2>Technical Questions</h2>
-            <div class="faq-list">
-                <article class="faq-item">
-                    <h3>I forgot my password. What should I do?</h3>
-                    <p>Use the "Forgot Password" link on the login page to reset your password. You will receive reset instructions via email.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>Is StudentHub mobile-friendly?</h3>
-                    <p>Yes, StudentHub is designed with responsive layouts that work on mobile, tablet, and desktop devices.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>How do I report a technical issue?</h3>
-                    <p>Use the Contact form or the Feedback section in your dashboard to report technical issues to the support team.</p>
-                </article>
-            </div>
+        <section class="faq-list-section">
+            <div id="faq-container" class="faq-list" data-renderer='{
+                "dataUrl": "data/faqs.json",
+                "containerSelector": "#faq-container",
+                "searchSelector": "#faq-search",
+                "filterSelector": "#faq-filter",
+                "paginationSelector": "#faq-pagination",
+                "itemsPerPage": 10,
+                "filterKey": "category",
+                "searchKeys": ["question", "answer"],
+                "templateFn": "faqTemplate"
+            }'></div>
+            <div id="faq-pagination"></div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/data-renderer.js"></script>
+    <script>
+        function faqTemplate(faq) {
+            return `
+                <article class="faq-item">
+                    <h3>${faq.question}</h3>
+                    <p>${faq.answer}</p>
+                    <span class="badge">${faq.category}</span>
+                </article>
+            `;
+        }
+    </script>
 </body>
 </html>

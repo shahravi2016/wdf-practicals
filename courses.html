@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Courses</title>
-    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/utils.css">
 </head>
 <body>
     <header>
@@ -44,78 +50,37 @@
                 <h1>Courses</h1>
             </section>
 
+            <section class="courses-controls">
+                <div class="controls-row">
+                    <div class="search-box">
+                        <label for="course-search" class="visually-hidden">Search courses</label>
+                        <input type="search" id="course-search" placeholder="Search courses..." aria-describedby="course-search-hint">
+                        <span id="course-search-hint" class="visually-hidden">Type to filter courses by code, title, or faculty</span>
+                    </div>
+                    <div class="sort-box">
+                        <label for="course-sort" class="visually-hidden">Sort courses</label>
+                        <select id="course-sort" aria-label="Sort courses">
+                            <option value="name-asc" selected>Course Code: A-Z</option>
+                            <option value="name-desc">Course Code: Z-A</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
             <section class="courses-section">
                 <h2>Current Courses</h2>
-                <div class="course-cards">
-                    <article class="course-card">
-                        <h3>CS101 - Programming Fundamentals</h3>
-                        <dl>
-                            <dt>Faculty:</dt>
-                            <dd>Dr. Smith</dd>
-                            <dt>Credits:</dt>
-                            <dd>4</dd>
-                            <dt>Schedule:</dt>
-                            <dd>Mon/Wed 10:00-11:30 AM</dd>
-                            <dt>Room:</dt>
-                            <dd>CS Lab 1</dd>
-                        </dl>
-                        <div class="course-links">
-                            <a href="#" class="btn btn-sm">Syllabus</a>
-                            <a href="#" class="btn btn-sm">Resources</a>
-                        </div>
-                    </article>
-                    <article class="course-card">
-                        <h3>MA101 - Calculus I</h3>
-                        <dl>
-                            <dt>Faculty:</dt>
-                            <dd>Dr. Jones</dd>
-                            <dt>Credits:</dt>
-                            <dd>3</dd>
-                            <dt>Schedule:</dt>
-                            <dd>Tue/Thu 9:00-10:30 AM</dd>
-                            <dt>Room:</dt>
-                            <dd>Lecture Hall 3</dd>
-                        </dl>
-                        <div class="course-links">
-                            <a href="#" class="btn btn-sm">Syllabus</a>
-                            <a href="#" class="btn btn-sm">Resources</a>
-                        </div>
-                    </article>
-                    <article class="course-card">
-                        <h3>PH101 - Physics</h3>
-                        <dl>
-                            <dt>Faculty:</dt>
-                            <dd>Dr. Wilson</dd>
-                            <dt>Credits:</dt>
-                            <dd>4</dd>
-                            <dt>Schedule:</dt>
-                            <dd>Mon/Fri 2:00-3:30 PM</dd>
-                            <dt>Room:</dt>
-                            <dd>Physics Lab 2</dd>
-                        </dl>
-                        <div class="course-links">
-                            <a href="#" class="btn btn-sm">Syllabus</a>
-                            <a href="#" class="btn btn-sm">Resources</a>
-                        </div>
-                    </article>
-                    <article class="course-card">
-                        <h3>EC101 - Basic Electronics</h3>
-                        <dl>
-                            <dt>Faculty:</dt>
-                            <dd>Dr. Brown</dd>
-                            <dt>Credits:</dt>
-                            <dd>3</dd>
-                            <dt>Schedule:</dt>
-                            <dd>Wed 11:00-12:30 PM</dd>
-                            <dt>Room:</dt>
-                            <dd>EC Lab 1</dd>
-                        </dl>
-                        <div class="course-links">
-                            <a href="#" class="btn btn-sm">Syllabus</a>
-                            <a href="#" class="btn btn-sm">Resources</a>
-                        </div>
-                    </article>
-                </div>
+                <div id="courses-container" class="course-cards" data-renderer='{
+                    "dataUrl": "data/courses.json",
+                    "containerSelector": "#courses-container",
+                    "searchSelector": "#course-search",
+                    "sortSelector": "#course-sort",
+                    "paginationSelector": "#courses-pagination",
+                    "itemsPerPage": 8,
+                    "filterKey": "category",
+                    "searchKeys": ["code", "title", "faculty"],
+                    "templateFn": "courseTemplate"
+                }'></div>
+                <div id="courses-pagination"></div>
             </section>
 
             <section class="courses-section">
@@ -168,5 +133,31 @@
     <footer>
         <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
     </footer>
+    <script src="js/courses.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/data-renderer.js"></script>
+    <script>
+        function courseTemplate(course) {
+            return `
+                <article class="course-card">
+                    <h3>${course.code} - ${course.title}</h3>
+                    <dl>
+                        <dt>Faculty:</dt>
+                        <dd>${course.faculty}</dd>
+                        <dt>Credits:</dt>
+                        <dd>${course.credits}</dd>
+                        <dt>Schedule:</dt>
+                        <dd>${course.schedule}</dd>
+                        <dt>Room:</dt>
+                        <dd>${course.room}</dd>
+                    </dl>
+                    <div class="course-links">
+                        <a href="#" class="btn btn-sm">Syllabus</a>
+                        <a href="#" class="btn btn-sm">Resources</a>
+                    </div>
+                </article>
+            `;
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+@media (max-width: 480px) {
+    .nav-links { gap: var(--spacing-md); font-size: var(--font-size-sm); }
+    main { padding: var(--spacing-lg) var(--spacing-md); }
+    .hero { padding: var(--spacing-xl) var(--spacing-md); }
+    .hero h1 { font-size: var(--font-size-xl); }
+    .card-grid, .stats-grid { grid-template-columns: 1fr; }
+    .action-buttons { flex-direction: column; }
+    .action-buttons .btn { width: 100%; }
+    .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
+    .attendance-table, .admin-table { font-size: var(--font-size-sm); }
+    .controls-row { flex-direction: column; }
+    .search-box, .filter-box, .sort-box { min-width: 100%; }
+}
+
+@media (max-width: 899px) {
+    .hamburger { display: flex !important; }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 260px;
+        height: 100vh;
+        z-index: 1000;
+        background: var(--color-surface);
+        box-shadow: var(--shadow-md);
+        transition: left 0.3s ease;
+        overflow-y: auto;
+    }
+    .sidebar.open { left: 0; }
+    .sidebar-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    .sidebar-overlay.visible { opacity: 1; visibility: visible; }
+    body.sidebar-open { overflow: hidden; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+}
+
+@media print {
+    header, footer, .sidebar, .btn, .action-buttons, .controls-row, .pagination { display: none !important; }
+    main { padding: 0; max-width: 100%; }
+    .dashboard-layout { display: block; }
+    .card, .stat-card, .course-card, .faculty-card { break-inside: avoid; }
+    body { background: #fff; color: #000; }
+    a { text-decoration: none; color: #000; }
+}

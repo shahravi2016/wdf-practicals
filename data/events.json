@@ -1,0 +1,164 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Tech Symposium 2026",
+            "date": "2026-10-15",
+            "endDate": "2026-10-17",
+            "venue": "Main Auditorium",
+            "category": "Technical",
+            "description": "Annual technology symposium featuring industry speakers, workshops, and student project exhibitions.",
+            "poster": ""
+        },
+        {
+            "id": 2,
+            "title": "Career Fair 2026",
+            "date": "2026-11-05",
+            "endDate": "2026-11-05",
+            "venue": "Convention Center",
+            "category": "Career",
+            "description": "Connect with 50+ employers from tech, finance, consulting, and more. Bring your resume.",
+            "poster": ""
+        },
+        {
+            "id": 3,
+            "title": "Cultural Festival",
+            "date": "2026-12-10",
+            "endDate": "2026-12-12",
+            "venue": "Campus Grounds",
+            "category": "Cultural",
+            "description": "Three days of music, dance, food stalls, and cultural performances from student groups.",
+            "poster": ""
+        },
+        {
+            "id": 4,
+            "title": "Research Methodology Workshop",
+            "date": "2027-01-20",
+            "endDate": "2027-01-20",
+            "venue": "Science Block, Room 101",
+            "category": "Academic",
+            "description": "Hands-on workshop on research methods, academic writing, and publication strategies.",
+            "poster": ""
+        },
+        {
+            "id": 5,
+            "title": "Hackathon 2027",
+            "date": "2027-02-14",
+            "endDate": "2027-02-15",
+            "venue": "CS Lab Complex",
+            "category": "Technical",
+            "description": "24-hour coding competition with prizes for best projects in AI, Web, and Mobile categories.",
+            "poster": ""
+        },
+        {
+            "id": 6,
+            "title": "Sports Week",
+            "date": "2027-03-01",
+            "endDate": "2027-03-07",
+            "venue": "Sports Complex",
+            "category": "Sports",
+            "description": "Inter-department sports tournament including cricket, football, basketball, and athletics.",
+            "poster": ""
+        },
+        {
+            "id": 7,
+            "title": "Guest Lecture: AI Ethics",
+            "date": "2027-03-15",
+            "endDate": "2027-03-15",
+            "venue": "Lecture Hall 1",
+            "category": "Academic",
+            "description": "Expert talk on ethical AI development and responsible machine learning practices.",
+            "poster": ""
+        },
+        {
+            "id": 8,
+            "title": "Startup Pitch Competition",
+            "date": "2027-04-05",
+            "endDate": "2027-04-05",
+            "venue": "Incubation Center",
+            "category": "Entrepreneurship",
+            "description": "Student startup ideas presented to venture capitalists and industry mentors.",
+            "poster": ""
+        },
+        {
+            "id": 9,
+            "title": "Alumni Meet 2027",
+            "date": "2027-04-20",
+            "endDate": "2027-04-20",
+            "venue": "Grand Ballroom",
+            "category": "Networking",
+            "description": "Annual alumni gathering with networking sessions and distinguished alumni awards.",
+            "poster": ""
+        },
+        {
+            "id": 10,
+            "title": "Environmental Awareness Drive",
+            "date": "2027-05-01",
+            "endDate": "2027-05-01",
+            "venue": "Campus Wide",
+            "category": "Social",
+            "description": "Tree plantation, waste management workshop, and sustainability pledge campaign.",
+            "poster": ""
+        },
+        {
+            "id": 11,
+            "title": "Technical Paper Presentation",
+            "date": "2027-05-15",
+            "endDate": "2027-05-16",
+            "venue": "Seminar Hall",
+            "category": "Academic",
+            "description": "Student research paper presentations with best paper awards in each category.",
+            "poster": ""
+        },
+        {
+            "id": 12,
+            "title": "Coding Bootcamp: React Native",
+            "date": "2027-06-01",
+            "endDate": "2027-06-05",
+            "venue": "CS Lab 3",
+            "category": "Technical",
+            "description": "5-day intensive bootcamp on cross-platform mobile app development with React Native.",
+            "poster": ""
+        },
+        {
+            "id": 13,
+            "title": "Inter-College Debate",
+            "date": "2027-06-20",
+            "endDate": "2027-06-20",
+            "venue": "Auditorium",
+            "category": "Literary",
+            "description": "Debate competition on contemporary issues with teams from 20+ colleges.",
+            "poster": ""
+        },
+        {
+            "id": 14,
+            "title": "Health & Wellness Camp",
+            "date": "2027-07-10",
+            "endDate": "2027-07-12",
+            "venue": "Medical Center",
+            "category": "Health",
+            "description": "Free health checkups, yoga sessions, mental health workshops, and nutrition counseling.",
+            "poster": ""
+        },
+        {
+            "id": 15,
+            "title": "Graduation Ceremony 2027",
+            "date": "2027-08-15",
+            "endDate": "2027-08-15",
+            "venue": "Main Stadium",
+            "category": "Ceremony",
+            "description": "Annual convocation for graduating batch with degree conferral and merit awards.",
+            "poster": ""
+        },
+        {
+            "id": 16,
+            "title": "Orientation Week 2027",
+            "date": "2027-08-01",
+            "endDate": "2027-08-07",
+            "venue": "Campus Wide",
+            "category": "Orientation",
+            "description": "Welcome program for new students including campus tours, ice-breakers, and induction.",
+            "poster": ""
+        }
+    ]
+}

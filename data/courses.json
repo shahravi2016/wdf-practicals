@@ -1,0 +1,36 @@
+{
+    "courses": [
+        {
+            "code": "CS101",
+            "title": "Programming Fundamentals",
+            "faculty": "Dr. Smith",
+            "credits": 4,
+            "schedule": "Mon/Wed 10:00-11:30 AM",
+            "room": "CS Lab 1"
+        },
+        {
+            "code": "MA101",
+            "title": "Calculus I",
+            "faculty": "Dr. Jones",
+            "credits": 3,
+            "schedule": "Tue/Thu 9:00-10:30 AM",
+            "room": "Lecture Hall 3"
+        },
+        {
+            "code": "PH101",
+            "title": "Physics",
+            "faculty": "Dr. Wilson",
+            "credits": 4,
+            "schedule": "Mon/Fri 2:00-3:30 PM",
+            "room": "Physics Lab 2"
+        },
+        {
+            "code": "EC101",
+            "title": "Basic Electronics",
+            "faculty": "Dr. Brown",
+            "credits": 3,
+            "schedule": "Wed 11:00-12:30 PM",
+            "room": "EC Lab 1"
+        }
+    ]
+}

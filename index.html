@@ -13,9 +13,18 @@
     <link rel="stylesheet" href="css/utils.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <nav>
-            <div class="logo">StudentHub</div>
+            <a href="index.html" class="logo" aria-label="StudentHub home">
+                <span class="logo-icon"><i data-lucide="graduation-cap"></i></span>
+                <span>StudentHub</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+                <i data-lucide="x"></i>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,102 +32,315 @@
                 <li><a href="notices.html">Notices</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Welcome to StudentHub</h1>
-            <p>Your centralized academic portal for courses, events, notices, and student services.</p>
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <span class="hero-badge"><i data-lucide="sparkles"></i>Welcome to the new semester</span>
+                    <h1>Your campus, <span class="hero-highlight">connected</span> in one place</h1>
+                    <p>Your centralized academic portal for courses, events, notices, and student services.</p>
+                    <div class="hero-actions">
+                        <a href="dashboard.html" class="btn btn-primary btn-lg"><i data-lucide="layout-dashboard"></i>Go to Dashboard</a>
+                        <a href="courses.html" class="btn btn-outline btn-lg"><i data-lucide="book-open"></i>Browse Courses</a>
+                    </div>
+                    <div class="hero-trust">
+                        <span class="hero-trust-item"><i data-lucide="users"></i>1,500+ students</span>
+                        <span class="hero-trust-item"><i data-lucide="book-open"></i>120+ courses</span>
+                        <span class="hero-trust-item"><i data-lucide="calendar"></i>40+ events a year</span>
+                        <span class="hero-trust-item"><i data-lucide="clock"></i>24/7 access</span>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="hero-svg" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="currentColor" stroke-opacity="0.1" stroke-width="1">
+                            <path d="M0 60H480M0 120H480M0 180H480M0 240H480M0 300H480"/>
+                            <path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360"/>
+                        </g>
+                        <path d="M150 150 C 190 112, 250 112, 290 150" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-opacity="0.45"/>
+                        <path d="M150 210 C 190 248, 250 248, 290 210" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-opacity="0.45"/>
+                        <circle cx="150" cy="150" r="9" fill="currentColor"/>
+                        <circle cx="290" cy="150" r="9" fill="currentColor"/>
+                        <circle cx="290" cy="210" r="9" fill="currentColor"/>
+                        <circle cx="150" cy="210" r="9" fill="currentColor"/>
+                        <circle cx="220" cy="180" r="22" fill="currentColor" fill-opacity="0.16"/>
+                        <circle cx="220" cy="180" r="36" fill="currentColor" fill-opacity="0.08"/>
+                        <path d="M52 252 V 152 L 118 118 L 184 152 V 252" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M118 118 V 102" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="118" cy="97" r="3.5" fill="currentColor"/>
+                        <rect x="82" y="172" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="112" y="172" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="82" y="198" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="112" y="198" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <path d="M100 252 V 230 a18 18 0 0 1 36 0 V 252" fill="currentColor" fill-opacity="0.18"/>
+                        <circle cx="226" cy="294" r="6" fill="currentColor"/>
+                        <path d="M226 300 V 320 M226 308 H 214 M226 308 H 238 M221 324 L 226 320 L 231 324" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="268" cy="292" r="6" fill="currentColor"/>
+                        <path d="M268 298 V 318 M268 306 H 256 M268 306 H 280 M263 322 L 268 318 L 273 322" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M46 336 H 434" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
         </section>
 
         <section class="quick-access">
-            <h2>Quick Access</h2>
-            <div class="card-grid">
-                <a href="courses.html" class="card">Courses</a>
-                <a href="attendance.html" class="card">Attendance</a>
-                <a href="events.html" class="card">Events</a>
-                <a href="notices.html" class="card">Notices</a>
-                <a href="feedback.html" class="card">Feedback</a>
-                <a href="settings.html" class="card">Settings</a>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="zap"></i>Quick Links</span>
+                    <h2>Quick Access</h2>
+                </div>
+                <p>Jump straight to the tools you use most.</p>
+            </div>
+            <div class="feature-grid card-rows">
+                <a href="courses.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="book-open"></i></span>
+                    <span class="feature-label">Courses</span>
+                    <span class="feature-desc">Browse and manage your courses</span>
+                </a>
+                <a href="attendance.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="calendar-check"></i></span>
+                    <span class="feature-label">Attendance</span>
+                    <span class="feature-desc">Track your attendance records</span>
+                </a>
+                <a href="events.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="calendar"></i></span>
+                    <span class="feature-label">Events</span>
+                    <span class="feature-desc">Discover campus events and talks</span>
+                </a>
+                <a href="notices.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="bell"></i></span>
+                    <span class="feature-label">Notices</span>
+                    <span class="feature-desc">Stay updated with announcements</span>
+                </a>
+                <a href="feedback.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="message-square"></i></span>
+                    <span class="feature-label">Feedback</span>
+                    <span class="feature-desc">Share your thoughts and suggestions</span>
+                </a>
+                <a href="settings.html" class="feature-card">
+                    <span class="feature-icon"><i data-lucide="settings"></i></span>
+                    <span class="feature-label">Settings</span>
+                    <span class="feature-desc">Manage profile and preferences</span>
+                </a>
             </div>
         </section>
 
         <section class="academic-info">
-            <h2>Academic Information</h2>
-            <div class="card-grid">
-                <article class="card">
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="graduation-cap"></i>Academics</span>
+                    <h2>Academic Information</h2>
+                </div>
+                <p>Everything you need to stay on top of your studies.</p>
+            </div>
+            <div class="card-grid card-rows">
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="book-marked"></i></span>
                     <h3>Current Courses</h3>
-                    <p>View your enrolled courses and schedules.</p>
+                    <p>View your enrolled courses, schedules, and learning materials.</p>
+                    <a href="courses.html" class="card-link">Learn more <i data-lucide="arrow-right"></i></a>
                 </article>
-                <article class="card">
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="calendar-clock"></i></span>
                     <h3>Upcoming Exams</h3>
-                    <p>Check exam timetables and preparation resources.</p>
+                    <p>Check exam timetables and preparation resources before it is too late.</p>
+                    <a href="notices.html" class="card-link">Learn more <i data-lucide="arrow-right"></i></a>
                 </article>
-                <article class="card">
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="users"></i></span>
                     <h3>Faculty Information</h3>
-                    <p>Contact details and office hours for your instructors.</p>
+                    <p>Contact details and office hours for all of your instructors.</p>
+                    <a href="about.html" class="card-link">Learn more <i data-lucide="arrow-right"></i></a>
                 </article>
             </div>
         </section>
 
         <section class="upcoming-events">
-            <h2>Upcoming Events</h2>
-            <div class="card-grid">
-                <article class="card">
-                    <h3>Tech Symposium 2026</h3>
-                    <p>October 15-17, 2026 | Main Auditorium</p>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="calendar"></i>What's happening</span>
+                    <h2>Upcoming Events</h2>
+                </div>
+                <a href="events.html" class="btn btn-secondary btn-sm">View all events <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="card-grid card-rows">
+                <article class="card event-mini">
+                    <div class="event-date">
+                        <span class="event-date-day">15</span>
+                        <span class="event-date-month">Oct</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Tech Symposium 2026</h3>
+                        <p><i data-lucide="map-pin"></i>Main Auditorium</p>
+                    </div>
                 </article>
-                <article class="card">
-                    <h3>Career Fair</h3>
-                    <p>November 5, 2026 | Convention Center</p>
+                <article class="card event-mini">
+                    <div class="event-date">
+                        <span class="event-date-day">05</span>
+                        <span class="event-date-month">Nov</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Career Fair</h3>
+                        <p><i data-lucide="map-pin"></i>Convention Center</p>
+                    </div>
                 </article>
-                <article class="card">
-                    <h3>Cultural Fest</h3>
-                    <p>December 10-12, 2026 | Campus Grounds</p>
+                <article class="card event-mini">
+                    <div class="event-date">
+                        <span class="event-date-day">10</span>
+                        <span class="event-date-month">Dec</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Cultural Fest</h3>
+                        <p><i data-lucide="map-pin"></i>Campus Grounds</p>
+                    </div>
                 </article>
-                <article class="card">
-                    <h3>Research Workshop</h3>
-                    <p>January 20, 2027 | Science Block</p>
+                <article class="card event-mini">
+                    <div class="event-date">
+                        <span class="event-date-day">20</span>
+                        <span class="event-date-month">Jan</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Research Workshop</h3>
+                        <p><i data-lucide="map-pin"></i>Science Block</p>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section class="latest-notices">
-            <h2>Latest Notices</h2>
-            <div class="notice-list">
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="megaphone"></i>Announcements</span>
+                    <h2>Latest Notices</h2>
+                </div>
+                <a href="notices.html" class="btn btn-secondary btn-sm">View all notices <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="notice-list card-rows">
                 <article class="notice-item">
-                    <h3>Semester Registration Opens</h3>
-                    <p>Registration for the next semester opens on October 1, 2026.</p>
+                    <span class="feature-icon"><i data-lucide="file-plus"></i></span>
+                    <div class="notice-content">
+                        <h3>Semester Registration Opens</h3>
+                        <p>Registration for the next semester opens on October 1, 2026.</p>
+                    </div>
+                    <span class="badge">Academic</span>
                 </article>
                 <article class="notice-item">
-                    <h3>Library Hours Extended</h3>
-                    <p>Library will remain open until 11 PM during exam weeks.</p>
+                    <span class="feature-icon"><i data-lucide="clock"></i></span>
+                    <div class="notice-content">
+                        <h3>Library Hours Extended</h3>
+                        <p>The library will remain open until 11 PM during exam weeks.</p>
+                    </div>
+                    <span class="badge">Library</span>
                 </article>
                 <article class="notice-item">
-                    <h3>Scholarship Applications</h3>
-                    <p>Merit scholarship applications due by November 15, 2026.</p>
+                    <span class="feature-icon"><i data-lucide="award"></i></span>
+                    <div class="notice-content">
+                        <h3>Scholarship Applications</h3>
+                        <p>Merit scholarship applications are due by November 15, 2026.</p>
+                    </div>
+                    <span class="badge">Scholarship</span>
                 </article>
             </div>
         </section>
 
         <section class="student-services">
-            <h2>Student Services</h2>
-            <div class="service-links">
-                <a href="#" class="service-link">Library</a>
-                <a href="#" class="service-link">Hostel</a>
-                <a href="#" class="service-link">Transport</a>
-                <a href="#" class="service-link">Placements</a>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="layers"></i>Beyond the classroom</span>
+                    <h2>Student Services</h2>
+                </div>
+                <p>Support services that help you make the most of your time at campus.</p>
+            </div>
+            <div class="service-grid card-rows">
+                <a href="library.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="library"></i></span>
+                    <span>Library</span>
+                </a>
+                <a href="scholarships.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="award"></i></span>
+                    <span>Scholarships</span>
+                </a>
+                <a href="placements.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="briefcase"></i></span>
+                    <span>Placements</span>
+                </a>
+                <a href="counseling.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="heart-handshake"></i></span>
+                    <span>Counseling</span>
+                </a>
+                <a href="transport.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="bus"></i></span>
+                    <span>Transport</span>
+                </a>
+                <a href="contact.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="headphones"></i></span>
+                    <span>Support</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="cta-content">
+                <h2>Ready to get started?</h2>
+                <p>Create your account and access everything StudentHub has to offer.</p>
+                <div class="cta-actions">
+                    <a href="register.html" class="btn btn-primary btn-lg"><i data-lucide="user-plus"></i>Create Account</a>
+                    <a href="login.html" class="btn btn-outline btn-lg"><i data-lucide="log-in"></i>Sign In</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="StudentHub home">
+                    <span class="logo-icon"><i data-lucide="graduation-cap"></i></span>
+                    <span>StudentHub</span>
+                </a>
+                <p>Your centralized academic portal for courses, events, notices, and student services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="scholarships.html">Scholarships</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="transport.html">Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

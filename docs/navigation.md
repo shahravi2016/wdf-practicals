@@ -25,5 +25,3 @@ Admin Dashboard
 ├── Students
 ├── Events
 └── Logout
-
-This is a navigation plan only. No authentication or authorization implemented in P1.

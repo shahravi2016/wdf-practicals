@@ -34,57 +34,34 @@
             <h1>Notices</h1>
         </section>
 
-        <section class="notice-category">
-            <h2>Important Notices</h2>
-            <div class="notice-list">
-                <article class="notice-item">
-                    <h3>Semester Registration Opens</h3>
-                    <p>Registration for the next semester opens on October 1, 2026. All students must complete registration by October 31, 2026.</p>
-                    <time datetime="2026-09-15">Posted: September 15, 2026</time>
-                </article>
-                <article class="notice-item">
-                    <h3>Examination Schedule Released</h3>
-                    <p>End-semester examination schedule for all programs has been published. Check the timetable section for details.</p>
-                    <time datetime="2026-09-20">Posted: September 20, 2026</time>
-                </article>
-                <article class="notice-item">
-                    <h3>Fee Payment Deadline</h3>
-                    <p>Last date for semester fee payment without late fee is October 15, 2026. Online payment portal is now active.</p>
-                    <time datetime="2026-09-10">Posted: September 10, 2026</time>
-                </article>
+        <section class="notice-controls">
+            <div class="controls-row">
+                <div class="search-box">
+                    <label for="notice-search" class="visually-hidden">Search notices</label>
+                    <input type="search" id="notice-search" placeholder="Search notices...">
+                </div>
+                <div class="filter-box">
+                    <label for="notice-filter" class="visually-hidden">Filter by category</label>
+                    <select id="notice-filter" aria-label="Filter notices by category">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
             </div>
         </section>
 
-        <section class="notice-category">
-            <h2>Academic Notices</h2>
-            <div class="notice-list">
-                <article class="notice-item">
-                    <h3>New Elective Courses Available</h3>
-                    <p>Three new elective courses have been added for the upcoming semester: Machine Learning Fundamentals, Digital Marketing, and Sustainable Engineering.</p>
-                    <time datetime="2026-09-18">Posted: September 18, 2026</time>
-                </article>
-                <article class="notice-item">
-                    <h3>Lab Timetable Updated</h3>
-                    <p>Revised laboratory timetables for all engineering departments are available. Please check the updated schedule.</p>
-                    <time datetime="2026-09-12">Posted: September 12, 2026</time>
-                </article>
-            </div>
-        </section>
-
-        <section class="notice-category">
-            <h2>General Notices</h2>
-            <div class="notice-list">
-                <article class="notice-item">
-                    <h3>Library Hours Extended</h3>
-                    <p>Library will remain open until 11 PM during exam weeks starting October 2026. Weekend hours also extended.</p>
-                    <time datetime="2026-09-22">Posted: September 22, 2026</time>
-                </article>
-                <article class="notice-item">
-                    <h3>Hostel Mess Menu Revision</h3>
-                    <p>New mess menu effective from October 1, 2026. Feedback on menu items can be submitted via the feedback form.</p>
-                    <time datetime="2026-09-25">Posted: September 25, 2026</time>
-                </article>
-            </div>
+        <section class="notice-list-section">
+            <div id="notice-container" class="notice-list card-rows" data-renderer='{
+                "dataUrl": "data/notices.json",
+                "containerSelector": "#notice-container",
+                "searchSelector": "#notice-search",
+                "filterSelector": "#notice-filter",
+                "paginationSelector": "#notice-pagination",
+                "itemsPerPage": 10,
+                "filterKey": "category",
+                "searchKeys": ["title", "description"],
+                "templateFn": "noticeTemplate"
+            }'></div>
+            <div id="notice-pagination"></div>
         </section>
     </main>
 
@@ -92,5 +69,17 @@
         <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/data-renderer.js"></script>
+    <script>
+        function noticeTemplate(notice) {
+            return `
+                <article class="notice-item">
+                    <h3>${notice.title}</h3>
+                    <p>${notice.description}</p>
+                    <time datetime="${notice.date}">${notice.date}</time>
+                </article>
+            `;
+        }
+    </script>
 </body>
 </html>

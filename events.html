@@ -60,7 +60,7 @@
         </section>
 
         <section class="events-list">
-            <div id="events-container" class="card-grid" data-renderer='{
+            <div id="events-container" class="card-grid card-rows" data-renderer='{
                 "dataUrl": "data/events.json",
                 "containerSelector": "#events-container",
                 "searchSelector": "#search-input",
@@ -88,13 +88,15 @@
                 ? ' - ' + new Date(event.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
                 : '';
             return `
-                <article class="card">
+                <article class="event-card">
+                    <img class="event-image" src="images/events/${event.category.toLowerCase()}.jpg" alt="${event.title}" loading="lazy">
+                    <div class="event-content">
                     <h3>${event.title}</h3>
                     <p><strong>Date:</strong> ${startDate}${endDate}</p>
                     <p><strong>Venue:</strong> ${event.venue}</p>
                     <p><strong>Category:</strong> <span class="badge">${event.category}</span></p>
                     <p>${event.description}</p>
-                    <a href="#" class="btn">View Details</a>
+                    </div>
                 </article>
             `;
         }

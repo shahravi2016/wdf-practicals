@@ -14,4 +14,4 @@ FR-11 Students can view courses.
 FR-12 Students can view attendance.
 FR-13 Students can submit feedback.
 FR-14 Students can manage relevant settings.
-FR-15 Admins will eventually manage students and events.
+FR-15 Admins manage students and events.

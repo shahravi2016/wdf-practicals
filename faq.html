@@ -51,7 +51,7 @@
         </section>
 
         <section class="faq-list-section">
-            <div id="faq-container" class="faq-list" data-renderer='{
+            <div id="faq-container" class="faq-list card-rows" data-renderer='{
                 "dataUrl": "data/faqs.json",
                 "containerSelector": "#faq-container",
                 "searchSelector": "#faq-search",
@@ -74,11 +74,11 @@
     <script>
         function faqTemplate(faq) {
             return `
-                <article class="faq-item">
-                    <h3>${faq.question}</h3>
+                <details class="faq-item">
+                    <summary>${faq.question}</summary>
                     <p>${faq.answer}</p>
                     <span class="badge">${faq.category}</span>
-                </article>
+                </details>
             `;
         }
     </script>

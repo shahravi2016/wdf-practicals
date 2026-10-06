@@ -22,7 +22,3 @@
 
 ## Admin Page (1)
 15. admin.html - Admin dashboard
-
-Total: 15 pages (exceeds minimum 10)
-Every page has a clear purpose.
-No fake or empty pages.

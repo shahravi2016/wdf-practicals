@@ -13,9 +13,18 @@
     <link rel="stylesheet" href="css/utils.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <nav>
-            <div class="logo">StudentHub</div>
+            <a href="index.html" class="logo" aria-label="StudentHub home">
+                <span class="logo-icon"><i data-lucide="graduation-cap"></i></span>
+                <span>StudentHub</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+                <i data-lucide="x"></i>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" aria-current="page">About</a></li>
@@ -23,62 +32,244 @@
                 <li><a href="notices.html">Notices</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
-            <h1>About StudentHub</h1>
-        </section>
-
-        <section class="about-content">
-            <article>
-                <h2>Purpose</h2>
-                <p>StudentHub is a centralized student portal designed to provide students with easy access to academic information, campus events, notices, and essential student services. The portal aims to eliminate the need for students to check multiple sources for information.</p>
-            </article>
-
-            <article>
-                <h2>Objectives</h2>
-                <ul>
-                    <li>Consolidate academic and campus information in one place</li>
-                    <li>Provide a responsive, accessible web interface</li>
-                    <li>Enable students to view courses, attendance, and grades</li>
-                    <li>Facilitate event discovery and registration</li>
-                    <li>Offer a platform for student feedback</li>
-                    <li>Support administrative functions for staff</li>
-                </ul>
-            </article>
-
-            <article>
-                <h2>Student Services</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Academic Records</h3>
-                        <p>Courses, attendance, grades, and transcripts</p>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <span class="hero-badge"><i data-lucide="info"></i>About StudentHub</span>
+                    <h1>A connected campus, <span class="hero-highlight">one login</span> away</h1>
+                    <p>StudentHub brings courses, events, notices, and student services into a single, easy-to-use portal.</p>
+                    <div class="hero-actions">
+                        <a href="register.html" class="btn btn-primary btn-lg"><i data-lucide="user-plus"></i>Create your account</a>
+                        <a href="#services" class="btn btn-outline btn-lg"><i data-lucide="layers"></i>Explore services</a>
                     </div>
-                    <div class="card">
-                        <h3>Campus Life</h3>
-                        <p>Events, clubs, sports, and activities</p>
-                    </div>
-                    <div class="card">
-                        <h3>Support Services</h3>
-                        <p>Counseling, career guidance, and help desk</p>
-                    </div>
-                    <div class="card">
-                        <h3>Facilities</h3>
-                        <p>Library, labs, hostel, and transport info</p>
+                    <div class="hero-trust">
+                        <span class="hero-trust-item"><i data-lucide="building"></i>One hub for campus life</span>
+                        <span class="hero-trust-item"><i data-lucide="users"></i>Students, faculty and staff</span>
+                        <span class="hero-trust-item"><i data-lucide="smartphone"></i>Works on any device</span>
                     </div>
                 </div>
-            </article>
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="hero-svg" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="currentColor" stroke-opacity="0.1" stroke-width="1">
+                            <path d="M0 60H480M0 120H480M0 180H480M0 240H480M0 300H480"/>
+                            <path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360"/>
+                        </g>
+                        <path d="M150 150 C 190 112, 250 112, 290 150" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-opacity="0.45"/>
+                        <path d="M150 210 C 190 248, 250 248, 290 210" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-opacity="0.45"/>
+                        <circle cx="150" cy="150" r="9" fill="currentColor"/>
+                        <circle cx="290" cy="150" r="9" fill="currentColor"/>
+                        <circle cx="290" cy="210" r="9" fill="currentColor"/>
+                        <circle cx="150" cy="210" r="9" fill="currentColor"/>
+                        <circle cx="220" cy="180" r="22" fill="currentColor" fill-opacity="0.16"/>
+                        <circle cx="220" cy="180" r="36" fill="currentColor" fill-opacity="0.08"/>
+                        <path d="M52 252 V 152 L 118 118 L 184 152 V 252" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M118 118 V 102" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="118" cy="97" r="3.5" fill="currentColor"/>
+                        <rect x="82" y="172" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="112" y="172" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="82" y="198" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <rect x="112" y="198" width="12" height="14" rx="2" fill="currentColor" fill-opacity="0.35"/>
+                        <path d="M100 252 V 230 a18 18 0 0 1 36 0 V 252" fill="currentColor" fill-opacity="0.18"/>
+                        <circle cx="226" cy="294" r="6" fill="currentColor"/>
+                        <path d="M226 300 V 320 M226 308 H 214 M226 308 H 238 M221 324 L 226 320 L 231 324" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="268" cy="292" r="6" fill="currentColor"/>
+                        <path d="M268 298 V 318 M268 306 H 256 M268 308 H 280 M263 322 L 268 318 L 273 322" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M313 252 V 178 C 313 140, 345 140, 345 178 V 252" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M345 196 H 313" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="329" cy="164" r="7" fill="currentColor"/>
+                        <circle cx="329" cy="164" r="15" fill="currentColor" fill-opacity="0.12"/>
+                        <path d="M46 336 H 434" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="compass"></i>Purpose</span>
+                    <h2>What is StudentHub?</h2>
+                </div>
+                <p>Built to take the hassle out of campus information.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>StudentHub is the college's online portal for academic life. Before it existed, students had to chase updates across notice boards, email threads, and department websites. That scattered way of working cost time and, too often, meant missing an important deadline.</p>
+                    <p>Today, students sign in once and see everything that matters. Their courses and attendance, exam schedules, campus events, library updates, and service requests all live in one place. Faculty and administrators use the same platform to publish notices and act on feedback.</p>
+                    <p>The portal keeps the same clean layout on your phone, tablet, or laptop, so campus information is never more than a couple of taps away.</p>
+                </div>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="target"></i></span>
+                    <h3>Our mission</h3>
+                    <p>Give every student a single, reliable place to understand their academic journey and stay connected with campus life.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="list-checks"></i>Objectives</span>
+                    <h2>What the portal aims to do</h2>
+                </div>
+                <p>Four goals guide every feature we build.</p>
+            </div>
+            <div class="card-grid card-rows">
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="layers"></i></span>
+                    <h3>Consolidate information</h3>
+                    <p>Every notice, event, and academic update lives in one place instead of being scattered across the campus.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="timer"></i></span>
+                    <h3>Save students time</h3>
+                    <p>Find what you need in a couple of clicks rather than visiting several websites and notice boards.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="bell-ring"></i></span>
+                    <h3>Keep everyone informed</h3>
+                    <p>Timely, accurate updates for students, faculty, and administrators, all from a single channel.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="messages-square"></i></span>
+                    <h3>Grow with feedback</h3>
+                    <p>Students can submit feedback that meaningfully shapes the platform each semester.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="heart-handshake"></i>Values</span>
+                    <h2>How we work</h2>
+                </div>
+                <p>Principles that keep the portal useful year after year.</p>
+            </div>
+            <div class="card-grid card-rows">
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="clipboard-check"></i></span>
+                    <h3>Clear and current</h3>
+                    <p>Information is kept simple, up to date, and easy to scan, so students can trust what they read.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="smartphone"></i></span>
+                    <h3>Accessible to all</h3>
+                    <p>Responsive layouts and readable contrast mean the portal works for everyone, on any device.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="shield-check"></i></span>
+                    <h3>Your data, protected</h3>
+                    <p>Student records are handled carefully and shared only with the people who need to see them.</p>
+                </article>
+                <article class="card card-with-icon">
+                    <span class="feature-icon"><i data-lucide="refresh-cw"></i></span>
+                    <h3>Constantly improving</h3>
+                    <p>Feedback from students and staff drives regular improvements to design and features.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="student-services" id="services">
+            <div class="section-header">
+                <div>
+                    <span class="section-eyebrow"><i data-lucide="layers"></i>Services</span>
+                    <h2>Beyond the classroom</h2>
+                </div>
+                <p>Support services that help you make the most of campus life.</p>
+            </div>
+            <div class="service-grid card-rows">
+                <a href="library.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="library"></i></span>
+                    <span>Library</span>
+                </a>
+                <a href="scholarships.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="award"></i></span>
+                    <span>Scholarships</span>
+                </a>
+                <a href="placements.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="briefcase"></i></span>
+                    <span>Placements</span>
+                </a>
+                <a href="counseling.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="heart-handshake"></i></span>
+                    <span>Counseling</span>
+                </a>
+                <a href="transport.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="bus"></i></span>
+                    <span>Transport</span>
+                </a>
+                <a href="faq.html" class="service-card">
+                    <span class="service-icon"><i data-lucide="book-question"></i></span>
+                    <span>FAQ</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="cta-content">
+                <h2>Ready to explore StudentHub?</h2>
+                <p>Create your account and find everything you need for a smooth semester.</p>
+                <div class="cta-actions">
+                    <a href="register.html" class="btn btn-primary btn-lg"><i data-lucide="user-plus"></i>Create Account</a>
+                    <a href="login.html" class="btn btn-outline btn-lg"><i data-lucide="log-in"></i>Sign In</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="StudentHub home">
+                    <span class="logo-icon"><i data-lucide="graduation-cap"></i></span>
+                    <span>StudentHub</span>
+                </a>
+                <p>Your centralized academic portal for courses, events, notices, and student services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="scholarships.html">Scholarships</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="transport.html">Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

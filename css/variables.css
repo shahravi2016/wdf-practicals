@@ -1,26 +1,145 @@
 :root {
-    --color-primary: #0066cc;
-    --color-primary-hover: #0052a3;
-    --color-success: #4caf50;
-    --color-warning: #ff9800;
-    --color-danger: #f44336;
-    --color-bg: #fafafa;
-    --color-surface: #fff;
-    --color-border: #e0e0e0;
-    --color-text: #333;
-    --color-text-muted: #666;
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-    --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.5rem;
-    --font-size-2xl: 2rem;
+  /* Fonts */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Fluid Type Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --text-3xl: clamp(1.9rem, 1.5rem + 2vw, 3rem);
+
+  /* Font Weights */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Colors - Light Mode
+     Indigo = focus, intellect (primary, interactive elements only)
+     Amber = warmth, optimism (accent)
+     Green = growth, harmony (success)
+     Zinc neutrals: no blue tint on backgrounds */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-active: #3730a3;
+  --color-primary-light: #e0e7ff;
+  --color-on-primary: #ffffff;
+  --color-accent: #f59e0b;
+  --color-accent-hover: #d97706;
+  --color-accent-light: #fef3c7;
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+  --color-warning: #d97706;
+  --color-warning-light: #fef3c7;
+  --color-danger: #dc2626;
+  --color-danger-light: #fee2e2;
+  --color-info: #0284c7;
+  --color-info-light: #e0f2fe;
+
+  /* Neutrals (zinc family: neutral, no blue tint) */
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f4f4f5;
+  --color-border: #e4e4e7;
+  --color-border-strong: #d4d4d8;
+  --color-text: #18181b;
+  --color-text-muted: #52525b;
+  --color-text-subtle: #a1a1aa;
+
+  /* Card row tones (soft pastels, alternate per row) */
+  --color-tone-a-bg: #eef2ff;
+  --color-tone-a-border: #e0e7ff;
+  --color-tone-b-bg: #fffbeb;
+  --color-tone-b-border: #fde68a;
+  --color-tone-c-bg: #f0fdf4;
+  --color-tone-c-border: #dcfce7;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(24, 24, 27, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(24, 24, 27, 0.08), 0 2px 4px -2px rgba(24, 24, 27, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(24, 24, 27, 0.1), 0 4px 6px -4px rgba(24, 24, 27, 0.06);
+  --shadow-primary: 0 10px 20px -6px rgba(79, 70, 229, 0.2);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4.5rem;
+  --spacing-4xl: 6rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --header-height: 68px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Z-Index */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-tooltip: 500;
+}
+
+[data-theme="dark"] {
+  --color-primary: #818cf8;
+  --color-primary-hover: #a5b4fc;
+  --color-primary-active: #818cf8;
+  --color-primary-light: #312e81;
+  --color-on-primary: #0a0a0b;
+  --color-accent: #fbbf24;
+  --color-accent-hover: #fcd34d;
+  --color-accent-light: #78350f;
+  --color-success: #4ade80;
+  --color-success-light: #14532d;
+  --color-warning: #fbbf24;
+  --color-warning-light: #78350f;
+  --color-danger: #f87171;
+  --color-danger-light: #7f1d1d;
+  --color-info: #38bdf8;
+  --color-info-light: #0c4a6e;
+
+  /* Neutral near-black, no blue tint */
+  --color-bg: #0a0a0b;
+  --color-surface: #131316;
+  --color-surface-hover: #1c1c20;
+  --color-border: #26262a;
+  --color-border-strong: #3a3a40;
+  --color-text: #f4f4f5;
+  --color-text-muted: #a1a1aa;
+  --color-text-subtle: #71717a;
+
+  /* Card row tones (muted tints, alternate per row) */
+  --color-tone-a-bg: #17182b;
+  --color-tone-a-border: #2b2f52;
+  --color-tone-b-bg: #221e13;
+  --color-tone-b-border: #42371f;
+  --color-tone-c-bg: #131f17;
+  --color-tone-c-border: #24402f;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-primary: 0 10px 20px -6px rgba(129, 140, 248, 0.18);
 }

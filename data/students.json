@@ -2,12 +2,12 @@
     "students": [
         {
             "id": "STU2026001",
-            "name": "Alex Johnson",
-            "email": "alex.johnson@student.edu",
+            "name": "Aarav Sharma",
+            "email": "aarav.sharma@student.edu",
             "course": "B.Tech Computer Science",
             "year": "2nd Year",
             "rollNo": "CS2026045",
-            "phone": "+1 (234) 567-890"
+            "phone": "+91 98765 43201"
         },
         {
             "id": "STU2026002",
@@ -16,7 +16,7 @@
             "course": "B.Tech Computer Science",
             "year": "1st Year",
             "rollNo": "CS2026089",
-            "phone": "+1 (234) 567-891"
+            "phone": "+91 98765 43202"
         },
         {
             "id": "STU2026003",
@@ -25,7 +25,7 @@
             "course": "B.Tech Information Technology",
             "year": "1st Year",
             "rollNo": "IT2026012",
-            "phone": "+1 (234) 567-892"
+            "phone": "+91 98765 43203"
         },
         {
             "id": "STU2026004",
@@ -34,7 +34,7 @@
             "course": "MCA",
             "year": "1st Year",
             "rollNo": "MCA2026003",
-            "phone": "+1 (234) 567-893"
+            "phone": "+91 98765 43204"
         },
         {
             "id": "STU2026005",
@@ -43,7 +43,7 @@
             "course": "B.Tech Electronics & Communication",
             "year": "2nd Year",
             "rollNo": "EC2026067",
-            "phone": "+1 (234) 567-894"
+            "phone": "+91 98765 43205"
         },
         {
             "id": "STU2026006",
@@ -52,7 +52,7 @@
             "course": "B.Tech Mechanical Engineering",
             "year": "3rd Year",
             "rollNo": "ME2026034",
-            "phone": "+1 (234) 567-895"
+            "phone": "+91 98765 43206"
         },
         {
             "id": "STU2026007",
@@ -61,7 +61,7 @@
             "course": "B.Tech Civil Engineering",
             "year": "2nd Year",
             "rollNo": "CE2026078",
-            "phone": "+1 (234) 567-896"
+            "phone": "+91 98765 43207"
         },
         {
             "id": "STU2026008",
@@ -70,7 +70,7 @@
             "course": "B.Tech Electrical Engineering",
             "year": "4th Year",
             "rollNo": "EE2026023",
-            "phone": "+1 (234) 567-897"
+            "phone": "+91 98765 43208"
         },
         {
             "id": "STU2026009",
@@ -79,7 +79,7 @@
             "course": "M.Tech Computer Science",
             "year": "1st Year",
             "rollNo": "MCS2026007",
-            "phone": "+1 (234) 567-898"
+            "phone": "+91 98765 43209"
         },
         {
             "id": "STU2026010",
@@ -88,7 +88,7 @@
             "course": "MBA",
             "year": "2nd Year",
             "rollNo": "MBA2026015",
-            "phone": "+1 (234) 567-899"
+            "phone": "+91 98765 43210"
         },
         {
             "id": "STU2026011",
@@ -97,7 +97,7 @@
             "course": "B.Tech Computer Science",
             "year": "3rd Year",
             "rollNo": "CS2026101",
-            "phone": "+1 (234) 567-900"
+            "phone": "+91 98765 43211"
         },
         {
             "id": "STU2026012",
@@ -106,7 +106,7 @@
             "course": "B.Tech Information Technology",
             "year": "2nd Year",
             "rollNo": "IT2026056",
-            "phone": "+1 (234) 567-901"
+            "phone": "+91 98765 43212"
         },
         {
             "id": "STU2026013",
@@ -115,7 +115,7 @@
             "course": "B.Tech Electronics & Communication",
             "year": "3rd Year",
             "rollNo": "EC2026089",
-            "phone": "+1 (234) 567-902"
+            "phone": "+91 98765 43213"
         },
         {
             "id": "STU2026014",
@@ -124,7 +124,7 @@
             "course": "MCA",
             "year": "2nd Year",
             "rollNo": "MCA2026018",
-            "phone": "+1 (234) 567-903"
+            "phone": "+91 98765 43214"
         },
         {
             "id": "STU2026015",
@@ -133,7 +133,7 @@
             "course": "B.Tech Mechanical Engineering",
             "year": "4th Year",
             "rollNo": "ME2026045",
-            "phone": "+1 (234) 567-904"
+            "phone": "+91 98765 43215"
         },
         {
             "id": "STU2026016",
@@ -142,7 +142,7 @@
             "course": "B.Tech Computer Science",
             "year": "1st Year",
             "rollNo": "CS2026112",
-            "phone": "+1 (234) 567-905"
+            "phone": "+91 98765 43216"
         },
         {
             "id": "STU2026017",
@@ -151,7 +151,7 @@
             "course": "B.Tech Civil Engineering",
             "year": "2nd Year",
             "rollNo": "CE2026090",
-            "phone": "+1 (234) 567-906"
+            "phone": "+91 98765 43217"
         },
         {
             "id": "STU2026018",
@@ -160,7 +160,7 @@
             "course": "B.Tech Electrical Engineering",
             "year": "3rd Year",
             "rollNo": "EE2026067",
-            "phone": "+1 (234) 567-907"
+            "phone": "+91 98765 43218"
         },
         {
             "id": "STU2026019",
@@ -169,7 +169,7 @@
             "course": "M.Tech Data Science",
             "year": "1st Year",
             "rollNo": "MDS2026004",
-            "phone": "+1 (234) 567-908"
+            "phone": "+91 98765 43219"
         },
         {
             "id": "STU2026020",
@@ -178,7 +178,7 @@
             "course": "MBA",
             "year": "1st Year",
             "rollNo": "MBA2026028",
-            "phone": "+1 (234) 567-909"
+            "phone": "+91 98765 43220"
         }
     ]
 }

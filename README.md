@@ -1,100 +1,35 @@
 # StudentHub
 
-## Project Description
-StudentHub is a centralized student portal providing access to academic information, campus events, notices, and student services. Built as a semester-long project for Web Development Frameworks (ITUE203).
+Student portal for Web Development Frameworks (ITUE203). Practicals 1-7 complete.
 
-## Problem Statement
-Students need a single platform to access distributed academic and campus information including events, notices, course details, attendance, and feedback mechanisms.
+## Pages (15)
 
-## Objectives
-- Create a responsive, accessible web portal
-- Demonstrate progressive enhancement through 15 practicals
-- Implement semantic HTML, CSS, JavaScript, PHP, and MySQL
-- Follow security best practices for authentication and data handling
+**Public:** index.html, about.html, events.html, notices.html, faq.html, contact.html, login.html, register.html
+**Student:** dashboard.html, profile.html, courses.html, attendance.html, feedback.html, settings.html
+**Admin:** admin.html
 
-## User Roles
-- **Guest**: Access public pages (Home, About, Events, Notices, FAQ, Contact, Login, Register)
-- **Student**: Access portal pages (Dashboard, Profile, Courses, Attendance, Notices, Feedback, Settings)
-- **Admin**: Manage students, events, and view statistics (planned for later practicals)
+## Features
 
-## Modules
-1. Public Information
-2. Authentication
-3. Student Dashboard
-4. Academic Information
-5. Events
-6. Notices
-7. Feedback
-8. Administration
+- Semantic HTML5 with accessible forms and navigation
+- Responsive CSS (7 modular files, mobile-first, Grid/Flex)
+- Dark/light theme toggle (persists in localStorage)
+- Mobile hamburger menu for sidebar navigation
+- FAQ collapse, modal system, notifications, content slider
+- Registration form validation (9 fields, regex, password strength meter)
+- JSON data rendering with search, filter, sort, pagination (events, courses, FAQs)
 
-## Technologies
-- HTML5
-- CSS3 (Flexbox, Grid)
-- JavaScript (ES6+)
-- PHP
-- MySQL
-- Git/GitHub
+## Data Files (/data)
 
-## Project Structure
-```
-StudentHub/
-├── index.html
-├── about.html
-├── events.html
-├── notices.html
-├── faq.html
-├── contact.html
-├── login.html
-├── register.html
-├── dashboard.html
-├── profile.html
-├── courses.html
-├── attendance.html
-├── feedback.html
-├── settings.html
-├── admin.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-├── docs/
-│   ├── problem-definition.md
-│   ├── user-roles.md
-│   ├── modules.md
-│   ├── functional-requirements.md
-│   ├── non-functional-requirements.md
-│   ├── page-list.md
-│   ├── navigation.md
-│   └── sitemap.txt
-└── wireframes/
-    ├── home.txt
-    ├── login.txt
-    ├── register.txt
-    ├── dashboard.txt
-    ├── profile.txt
-    └── courses.txt
-```
+courses.json (4), events.json (16), students.json (20), faqs.json (20)
 
-## How to Run
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. Navigate through pages using the navigation menu
-4. For PHP/MySQL practicals (P7+), deploy on XAMPP/WAMP/LAMP
+## JavaScript (/js)
 
-## Practical Progress
-- [x] P1: Project Initiation, Requirements, Sitemap, Wireframes, GitHub
-- [ ] P2: Semantic HTML5 Pages
-- [ ] P3: Responsive CSS
-- [ ] P4: JavaScript Interactivity
-- [ ] P5: Form Validation
-- [ ] P6: JSON Data Rendering
-- [ ] P7: PHP Form Processing
-- [ ] P8: MySQL Database
-- [ ] P9: Secure Registration
-- [ ] P10: Authentication & Sessions
-- [ ] P11: Student CRUD
-- [ ] P12: Event CRUD
-- [ ] P13: AJAX/API
-- [ ] P14: Admin Dashboard
-- [ ] P15: Final Integration
+script.js (shared UI), validation.js (register form), data-renderer.js (generic JSON renderer), courses.js (legacy)
+
+## CSS (/css)
+
+variables.css, base.css, layout.css, components.css, pages.css, theme.css, utils.css
+
+## Run
+
+Open index.html in browser. For JSON pages (events, courses, faq), use a local server (Live Server, `python -m http.server`) due to CORS.

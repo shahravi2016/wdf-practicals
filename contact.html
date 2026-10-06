@@ -34,6 +34,7 @@
             <h1>Contact Us</h1>
         </section>
 
+        <div class="contact-grid">
         <section class="contact-info">
             <h2>Contact Information</h2>
             <div class="card-grid">
@@ -44,7 +45,7 @@
                 </article>
                 <article class="card">
                     <h3>Phone</h3>
-                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><a href="tel:+912245678900">+91 22 4567 8900</a></p>
                     <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
                 </article>
                 <article class="card">
@@ -52,13 +53,19 @@
                     <p>Student Services Building</p>
                     <p>Room 204, Second Floor</p>
                     <p>University Campus</p>
+                    <p><a href="https://maps.google.com/?q=CHARUSAT+University" target="_blank" rel="noopener">View on map</a></p>
+                </article>
+                <article class="card">
+                    <h3>Departments</h3>
+                    <p><a href="mailto:admissions@studenthub.edu">admissions@studenthub.edu</a></p>
+                    <p><a href="mailto:exams@studenthub.edu">exams@studenthub.edu</a></p>
                 </article>
             </div>
         </section>
 
         <section class="contact-form-section">
             <h2>Send Us a Message</h2>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="php/contact.php" method="post">
                 <div class="form-group">
                     <label for="contact-name">Full Name</label>
                     <input type="text" id="contact-name" name="name" required>
@@ -85,11 +92,13 @@
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 StudentHub | <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a></p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/contact-validation.js"></script>
 </body>
 </html>

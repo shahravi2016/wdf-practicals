@@ -14,12 +14,12 @@ LAYOUT:
 | | [Courses]        | | | [Course Card]          | |
 | | [Attendance]     | | | Code: CS101            | |
 | | [Notices]        | | | Name: Programming      | |
-| | [Feedback]       | | | Faculty: Dr. Smith     | |
+| | [Feedback]       | | | Faculty: Dr. Sharma     | |
 | | [Settings]       | | | Credits: 4             | |
 | | [Logout]         | | | [Course Card]          | |
 | +------------------+ | | Code: MA101            | |
 |                      | | Name: Mathematics      | |
-|                      | | Faculty: Dr. Jones     | |
+|                      | | Faculty: Dr. Verma     | |
 |                      | | Credits: 3             | |
 |                      | | +------------------------+ |
 |                      | | | COURSE INFORMATION     | |

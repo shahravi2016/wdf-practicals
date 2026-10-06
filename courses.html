@@ -62,6 +62,8 @@
                         <select id="course-sort" aria-label="Sort courses">
                             <option value="name-asc" selected>Course Code: A-Z</option>
                             <option value="name-desc">Course Code: Z-A</option>
+                            <option value="credits-asc">Credits: Low to High</option>
+                            <option value="credits-desc">Credits: High to Low</option>
                         </select>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
 
             <section class="courses-section">
                 <h2>Current Courses</h2>
-                <div id="courses-container" class="course-cards" data-renderer='{
+                <div id="courses-container" class="course-cards card-rows" data-renderer='{
                     "dataUrl": "data/courses.json",
                     "containerSelector": "#courses-container",
                     "searchSelector": "#course-search",
@@ -85,7 +87,7 @@
 
             <section class="courses-section">
                 <h2>Course Information</h2>
-                <div class="card-grid">
+                <div class="card-grid card-rows">
                     <article class="card">
                         <h3>Syllabus</h3>
                         <p>Detailed course outlines, learning objectives, and assessment criteria.</p>
@@ -106,23 +108,23 @@
 
             <section class="courses-section">
                 <h2>Faculty Information</h2>
-                <div class="faculty-cards">
+                <div class="faculty-cards card-rows">
                     <article class="faculty-card">
-                        <h3>Dr. Smith</h3>
+                        <h3>Dr. Sharma</h3>
                         <p>Department of Computer Science</p>
-                        <p>Email: smith@university.edu</p>
+                        <p>Email: sharma@university.edu</p>
                         <p>Office: CS Building, Room 205</p>
                     </article>
                     <article class="faculty-card">
-                        <h3>Dr. Jones</h3>
+                        <h3>Dr. Verma</h3>
                         <p>Department of Mathematics</p>
-                        <p>Email: jones@university.edu</p>
+                        <p>Email: verma@university.edu</p>
                         <p>Office: Math Building, Room 102</p>
                     </article>
                     <article class="faculty-card">
-                        <h3>Dr. Wilson</h3>
+                        <h3>Dr. Iyer</h3>
                         <p>Department of Physics</p>
-                        <p>Email: wilson@university.edu</p>
+                        <p>Email: iyer@university.edu</p>
                         <p>Office: Science Block, Room 301</p>
                     </article>
                 </div>

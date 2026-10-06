@@ -2,11 +2,92 @@
 // Hamburger menu, theme switcher, FAQ collapse, modal, notifications, slider
 
 document.addEventListener('DOMContentLoaded', () => {
+    initMobileNav();
     initHamburgerMenu();
     initThemeSwitcher();
     initFaqCollapse();
     initSlider();
+    initCardRows();
+    initLucide();
 });
+
+// ===== Mobile Nav Toggle (public pages) =====
+function initMobileNav() {
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (!toggle || !links) return;
+
+    function close() {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    links.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+
+    document.addEventListener('click', (e) => {
+        if (!toggle.contains(e.target) && !links.contains(e.target) && links.classList.contains('open')) close();
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 769) close();
+    });
+}
+
+function initLucide() {
+    if (window.lucide) {
+        window.lucide.createIcons();
+    } else {
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/lucide@latest/dist/umd/lucide.min.js';
+        script.onload = () => {
+            if (window.lucide) window.lucide.createIcons();
+        };
+        document.head.appendChild(script);
+    }
+}
+
+window.refreshLucide = function() {
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+};
+
+// ===== Row-Alternating Card Colors =====
+// Adds .card-row-1/2/3 to each child of a .card-rows grid so every line
+// shares one tone and consecutive lines differ.
+function initCardRows() {
+    const grids = Array.from(document.querySelectorAll('.card-rows'));
+    if (!grids.length) return;
+
+    const apply = () => {
+        grids.forEach(grid => {
+            const tmpl = getComputedStyle(grid).gridTemplateColumns;
+            const cols = tmpl.split(/\s+/).length;
+            Array.from(grid.children).forEach((child, i) => {
+                const row = Math.floor(i / Math.max(cols, 1));
+                child.classList.remove('card-row-1', 'card-row-2', 'card-row-3');
+                child.classList.add('card-row-' + ((row % 3) + 1));
+            });
+        });
+    };
+
+    apply();
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(apply, 120);
+    });
+
+    window.refreshCardRows = apply;
+}
 
 // ===== Hamburger Menu (Mobile Sidebar) =====
 function initHamburgerMenu() {
@@ -30,7 +111,7 @@ function initHamburgerMenu() {
         gap: 5px;
     `;
     hamburger.querySelectorAll('span').forEach(span => {
-        span.style.cssText = 'display: block; width: 24px; height: 2px; background: #333; transition: 0.3s;';
+        span.style.cssText = 'display: block; width: 24px; height: 2px; background: var(--color-text); transition: 0.3s;';
     });
 
     // Insert hamburger before sidebar in header
@@ -51,7 +132,7 @@ function initHamburgerMenu() {
                 width: 260px;
                 height: 100vh;
                 z-index: 1000;
-                background: #fff;
+                background: var(--color-surface);
                 box-shadow: var(--shadow-md);
                 transition: left 0.3s ease;
                 overflow-y: auto;
@@ -127,98 +208,33 @@ function initThemeSwitcher() {
 
     const toggle = document.createElement('button');
     toggle.className = 'theme-toggle';
-    toggle.setAttribute('aria-label', 'Toggle dark mode');
-    toggle.innerHTML = '🌙';
-    toggle.style.cssText = `
-        background: none;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
-        padding: 0.5rem;
-        cursor: pointer;
-        font-size: 1.25rem;
-        margin-left: var(--spacing-md);
-    `;
+    toggle.setAttribute('type', 'button');
+    toggle.setAttribute('aria-label', 'Switch to dark mode');
+    toggle.setAttribute('aria-pressed', 'false');
+    toggle.innerHTML = '<i data-lucide="moon"></i><i data-lucide="sun"></i>';
 
-    const header = document.querySelector('header nav');
-    if (header) {
-        header.appendChild(toggle);
+    const nav = document.querySelector('header nav');
+    if (nav) {
+        nav.appendChild(toggle);
     }
 
-    // Load saved theme
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateToggleIcon(savedTheme);
+    updateToggleState(savedTheme);
 
     toggle.addEventListener('click', () => {
         const current = document.documentElement.getAttribute('data-theme');
-        const newTheme = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateToggleIcon(newTheme);
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateToggleState(next);
     });
 
-    function updateToggleIcon(theme) {
-        toggle.innerHTML = theme === 'dark' ? '☀️' : '🌙';
-        toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    function updateToggleState(theme) {
+        const isDark = theme === 'dark';
+        toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
     }
-
-    // Dark theme variables
-    const darkStyles = document.createElement('style');
-    darkStyles.textContent = `
-        [data-theme="dark"] {
-            --color-bg: #1a1a1a;
-            --color-surface: #2d2d2d;
-            --color-border: #444;
-            --color-text: #f0f0f0;
-            --color-text-muted: #aaa;
-        }
-        [data-theme="dark"] header,
-        [data-theme="dark"] footer,
-        [data-theme="dark"] .card,
-        [data-theme="dark"] .notice-item,
-        [data-theme="dark"] .event-item,
-        [data-theme="dark"] .course-item,
-        [data-theme="dark"] .info-item,
-        [data-theme="dark"] .course-card,
-        [data-theme="dark"] .faculty-card,
-        [data-theme="dark"] .stat-card,
-        [data-theme="dark"] .auth-form,
-        [data-theme="dark"] .feedback-form,
-        [data-theme="dark"] .contact-form,
-        [data-theme="dark"] .settings-form,
-        [data-theme="dark"] .faq-item,
-        [data-theme="dark"] .sidebar,
-        [data-theme="dark"] .attendance-table,
-        [data-theme="dark"] .admin-table,
-        [data-theme="dark"] .attendance-overview {
-            background: var(--color-surface);
-            border-color: var(--color-border);
-            color: var(--color-text);
-        }
-        [data-theme="dark"] .btn { background: var(--color-primary); }
-        [data-theme="dark"] .btn:hover { background: var(--color-primary-hover); }
-        [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea {
-            background: var(--color-bg);
-            border-color: var(--color-border);
-            color: var(--color-text);
-        }
-        [data-theme="dark"] input:focus, [data-theme="dark"] select:focus, [data-theme="dark"] textarea:focus {
-            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
-        }
-        [data-theme="dark"] .nav-links a { color: var(--color-text); }
-        [data-theme="dark"] .nav-links a:hover,
-        [data-theme="dark"] .nav-links a[aria-current="page"] { color: var(--color-primary); }
-        [data-theme="dark"] .sidebar-nav a:hover,
-        [data-theme="dark"] .sidebar-nav a[aria-current="page"] {
-            background: var(--color-bg);
-            color: var(--color-primary);
-        }
-        [data-theme="dark"] .attendance-table th,
-        [data-theme="dark"] .admin-table th { background: var(--color-bg); }
-        [data-theme="dark"] .status-good { color: #66bb6a; }
-        [data-theme="dark"] .status-warning { color: #ffb74d; }
-    `;
-    document.head.appendChild(darkStyles);
 }
 
 // ===== FAQ Collapse =====

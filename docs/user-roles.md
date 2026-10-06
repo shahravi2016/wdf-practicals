@@ -23,9 +23,7 @@ Can access student-specific portal pages:
 - Logout
 
 ## Admin
-Will eventually manage:
+Manages:
 - Students
 - Events
 - Dashboard/statistics
-
-At P1, admin functionality is only planned. No permissions or authentication implemented.

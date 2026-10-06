@@ -4,7 +4,7 @@ class DataRenderer {
     constructor(options = {}) {
         this.dataUrl = options.dataUrl;
         this.containerSelector = options.containerSelector;
-        this.templateFn = options.templateFn;
+        this.templateFn = window[options.templateFn] || options.templateFn;
         this.searchSelector = options.searchSelector || '#search-input';
         this.filterSelector = options.filterSelector || '#filter-select';
         this.sortSelector = options.sortSelector || '#sort-select';
@@ -155,6 +155,7 @@ class DataRenderer {
         }
 
         this.container.innerHTML = pageData.map(item => this.templateFn(item)).join('');
+        if (window.refreshCardRows) window.refreshCardRows();
         this.renderPagination(totalPages);
     }
 
